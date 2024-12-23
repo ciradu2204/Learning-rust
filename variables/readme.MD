@@ -1,0 +1,2 @@
+- Shadowing helps us to create different types of variables with the same name. 
+- With mut, we can not mutate a variable type  
