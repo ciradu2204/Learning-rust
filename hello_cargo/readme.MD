@@ -1,0 +1,4 @@
+- cargo new - create a new project
+- cargo build - to build dependencies
+- cargo run - run the executable 
+- 
