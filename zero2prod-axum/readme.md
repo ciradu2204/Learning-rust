@@ -1,0 +1,1 @@
+- Axum uses the same format as expressJS so to define a dynamic route, we use colon such as :
