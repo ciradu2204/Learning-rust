@@ -12,8 +12,26 @@ name="zero2prod_axum"
 
 [dependencies]
 axum = "0.7.9"
+axum-macros = "0.5"
 tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
 axum-server = "0.7.1"
+serde = { version = "1", features = ["derive"]}
+config = "0.13"
+uuid = { version = "1", features = ["v4"] }
+chrono = "0.4.15"
+ 
+# Using table-like toml syntax to avoid a super-long line!
+[dependencies.sqlx]
+version = "0.6"
+default-features = false
+features = [
+    "runtime-actix-rustls", 
+    "macros", 
+    "postgres", 
+    "uuid", 
+    "chrono", 
+    "migrate"
+]
 
 [dev-dependencies]
 reqwest= "0.11"
