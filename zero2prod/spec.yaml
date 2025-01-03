@@ -11,7 +11,7 @@ services:
   - name: zero2prod
     # Relative to the repository root
     dockerfile_path: Dockerfile
-    source_dir: .
+    source_dir: ./zero2prod
     github:
       # Depending on when you created the repository, 
       # the default branch on GitHub might have been named `master`
@@ -21,7 +21,7 @@ services:
       deploy_on_push: true
       # !!! Fill in with your details
       # e.g. LukeMathWalker/zero-to-production
-      repo: ciradu2204/Learning-rust/Zero2prod
+      repo: ciradu2204/Learning-rust
     # Active probe used by DigitalOcean's to ensure our application is healthy
     health_check:
       # The path to our health check endpoint! 
