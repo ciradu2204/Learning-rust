@@ -10,7 +10,7 @@ region: nyc3
 services:
   - name: zero2prod
     # Relative to the repository root
-    dockerfile_path: ./Dockerfile
+    dockerfile_path: ./zero2prod/Dockerfile
     source_dir: ./zero2prod
     github:
       # Depending on when you created the repository, 
